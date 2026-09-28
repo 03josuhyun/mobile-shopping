@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=none">
+  <title>Point of.</title>
+  <link rel="shortcut icon" href="./img/f.png" type="image/x-icon">
+  <!---->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./login.css">
+  <script src="./login.js"></script>
+</head>
+
+<body>
+  <header class="header" id="top_btn">
+    <button type="button" class="back" id="back">
+      <img src="./img/angle_left_solidcopy.png" alt="">
+    </button>
+    <p class="header_text">로그인</p>
+  </header>
+  <div class="wrap">
+    <div class="login_box">
+      <div class="id_box">
+        <input type="text" name="user_id" id="user_id" class="user_id" placeholder="아이디 입력" required autofocus>
+      </div>
+      <div class="pw_box">
+        <input type="text" name="user_pw" id="user_pw" class="user_pw" placeholder="비밀번호 입력" required>
+        <i class="fa-solid fa-eye-slash"></i>
+      </div>
+    </div><!--login_box-->
+    <div class="login_bot">
+      <div class="id_savebtn">
+        <input type="checkbox" id="save_btn" class="save_btn">
+        <label for="save_btn">아이디 저장</label>
+      </div>
+      <div class="find_box">
+        <a href="./find_id.html">
+          아이디 찾기
+        </a>
+        <span>|</span>
+        <a href="./find_pw.html">
+          비밀번호 찾기
+        </a>
+      </div>
+    </div><!--login_bot-->
+    <a href="#!">
+      <p class="login_btn">로그인</p>
+    </a><!--login_btn-->
+    <div class="login_keepbtn">
+      <input type="checkbox" id="keepbtn">
+      <label for="keepbtn">자동로그인</label>
+    </div>
+    <div class="sns_login_box">
+      <div class="sns_login_title">
+        <p>SNS로 간편하게 시작하세요</p>
+      </div>
+      <a href="#!">
+        <div class="kbtn">
+          <i class="fa-brands fa-kakao-talk"></i>
+          <p>카카오로 시작하기</p>
+        </div>
+      </a>
+      <a href="#!">
+        <div class="nbtn">
+          <div><img src="./img/n_icon copy.png" alt=""></div>
+          <p>네이버로 시작하기</p>
+        </div>
+      </a>
+      <a href="#!">
+        <div class="abtn">
+          <i class="fa-brands fa-apple"></i>
+          <p>Apple로 시작하기</p>
+        </div>
+      </a>
+    </div><!--sns_login_box-->
+    <div class="new_user_box">
+      <div class="new_login_title">
+        <p>지금 가입하고 신규고객 해택을 받으세요</p>
+      </div>
+      <div class="new_btn">
+        <p>회원가입</p>
+      </div>
+    </div>
+  </div><!--wrap-->
+</body>
+
+</html>

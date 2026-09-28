@@ -1,0 +1,160 @@
+/*---------------default_setting----------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*----------------------------------------------*/
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #FDFBF7;
+}
+
+/**/
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #F3ECE3;
+}
+.header .back {
+  border: none;
+  width: 45px;
+  height: 45px;
+  background-color: #F3ECE3;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.wrap {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+.wrap .terms_box {
+  width: 100%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.wrap .terms_box .terms_title {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 30px;
+}
+.wrap .terms_box .breadcrumb {
+  width: 200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+  display: flex;
+  color: #666;
+  font-size: 16px;
+}
+.wrap .terms_box .breadcrumb p:nth-child(1) {
+  color: black;
+  font-weight: bold;
+}
+.wrap .terms_box {
+  /*breadcrumb*/
+}
+.wrap .terms_box .terms_text {
+  width: calc(100% - 10px);
+  margin: 0 auto;
+}
+.wrap .terms_box {
+  /*terms_text*/
+}
+.wrap .terms_box .total_terms {
+  margin: 30px auto;
+  display: flex;
+  font-size: 14px;
+}
+.wrap .terms_box .total_terms label {
+  margin-left: 5px;
+}
+.wrap .terms_box .total_terms p {
+  margin-left: 30px;
+  color: #aaa;
+}
+.wrap .terms_box {
+  /*total_terms*/
+}
+.wrap .terms_box .terms01 {
+  border-bottom: 1px solid #ccc;
+}
+.wrap .terms_box .terms01 p {
+  display: none;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 10px;
+}
+.wrap .terms_box {
+  /*terms01*/
+}
+.wrap .terms_box .terms02 {
+  border-bottom: 1px solid #ccc;
+}
+.wrap .terms_box .terms02 p {
+  display: none;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 10px;
+}
+.wrap .terms_box {
+  /*terms02*/
+}
+.wrap .terms_box .terms03 {
+  border-bottom: 1px solid #ccc;
+}
+.wrap .terms_box .terms03 p {
+  display: none;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 10px;
+}
+.wrap {
+  /*terms_box*/
+}
+.wrap .btn_box {
+  width: calc(100% - 100px);
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .btn_box .btn_can {
+  padding: 5px 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #f3ece3;
+  border: none;
+  border-radius: 10px;
+}
+.wrap .btn_box .btn_next {
+  padding: 5px 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #f3ece3;
+  border: none;
+  border-radius: 10px;
+}
+
+/*wrap*//*# sourceMappingURL=log_add.css.map */

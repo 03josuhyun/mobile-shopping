@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=none">
+  <title>Point of.</title>
+  <link rel="shortcut icon" href="./img/f.png" type="image/x-icon">
+  <!---->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./mypage.css">
+  <script src="./mypage.js"></script>
+</head>
+
+<body>
+  <header class="header" id="top_btn">
+    <button type="button" class="back" id="back">
+      <img src="./img/angle_left_solidcopy.png" alt="">
+    </button>
+    <div class="btn">
+      <a href="./index.html">
+        <button type="button" class="home_btn">
+          <img src="./img/5_iconcopy.png" alt="">
+        </button>
+      </a>
+      <p class="header_text">Mypage</p>
+      <a href="#!">
+        <button type="button" class="search_btn">
+          <img src="./img/4_iconcopy.png" alt="">
+        </button>
+      </a>
+      <a href="./cart.html">
+        <button type="button" class="cart_btn">
+          <img src="./img/1_iconcopy.png" alt="">
+        </button>
+      </a>
+    </div>
+  </header><!--header-->
+  <div class="wrap">
+    <div class="mypage_title">
+      <p>반갑습니다</p>
+      <p class="user_name">000님</p>
+    </div><!--mypage_title-->
+    <div class="user_detail">
+      <div class="user_rating">
+        <p>등급</p>
+        <div>
+          <img src="./img/rating_B.png" alt="">
+        </div>
+      </div><!--user_rating-->
+      <div class="user_cupon">
+        <p>쿠폰</p>
+        <p>2장</p>
+      </div><!--user_cupon-->
+      <div class="user_point">
+        <p>포인트</p>
+        <p>9,000p</p>
+      </div><!--user_point-->
+      <div class="user_review">
+        <p>리뷰</p>
+        <p>2건</p>
+      </div><!--user_review-->
+    </div><!--user_detail-->
+    <div class="deliver_notice">
+      <div class="deliver_title">
+        <p>주문/배송</p>
+      </div><!--deliver_title-->
+      <div class="deliver">
+        <a href="#!">
+          <div class="deliver_txt01 deliver_txt">
+            <p class="txt01_num txt_num">0</p>
+            <p>결제완료</p>
+          </div>
+          <span>
+            <i class="fa-solid fa-angle-right"></i>
+          </span>
+          <div class="deliver_txt02 deliver_txt">
+            <p class="txt02_num txt_num">0</p>
+            <p>배송준비</p>
+          </div>
+          <span>
+            <i class="fa-solid fa-angle-right"></i>
+          </span>
+          <div class="deliver_txt03 deliver_txt">
+            <p class="txt03_num txt_num">0</p>
+            <p>배송중</p>
+          </div>
+          <span>
+            <i class="fa-solid fa-angle-right"></i>
+          </span>
+          <div class="deliver_txt04 deliver_txt">
+            <p class="txt04_num txt_num">0</p>
+            <p>배송완료</p>
+          </div>
+        </a>
+      </div><!--deliver-->
+    </div><!--deliver_notice-->
+    <div class="shopping_list">
+      <div class="shopping_list_title">
+        <div>
+          <img src="./img/1_iconcopy.png" alt="">
+          <p>쇼핑내역</p>
+        </div>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <ul class="shopping_list_box">
+        <li>주문/배송조회</li>
+        <li>취소/교환/반품</li>
+        <li>배송지 관리</li>
+        <li>선물함</li>
+        <li>선물취소/교환/반품</li>
+      </ul>
+    </div><!--shopping_list-->
+    <div class="my_benefit">
+      <div class="my_benefit_title">
+        <div>
+          <i class="fa-solid fa-file-lines"></i>
+          <p>나의 해택</p>
+        </div>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+      <ul class="my_benefit_box">
+        <li>쿠폰관리</li>
+        <li>포인트 내역</li>
+      </ul>
+    </div><!--my_benefit-->
+    <div class="user_info">
+      <div class="user_info_title">
+        <div>
+          <i class="fa-solid fa-circle-user"></i>
+          <p>회원정보</p>
+        </div>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+
+      <ul class="user_info_box">
+        <li>1:1문의</li>
+        <li>상품Q&A</li>
+        <li>회원정보 수정</li>
+        <li>회원탈퇴</li>
+      </ul>
+    </div><!--user_info-->
+    <a href="#!">
+      <i class="fa-solid fa-phone"></i>
+      <p>고객센터</p>
+    </a>
+  </div><!--wrap-->
+  <footer class="footer">
+    <input type="checkbox" id="footer_btn">
+    <label for="footer_btn" class="footer_btn">
+      Point of. 사업자 정보
+      <i class="fa-solid fa-angle-down"></i>
+    </label>
+    <div class="footer_top">
+      <div class="top_txt01">
+        <p class="footer_title">법인명 : </p>
+        <p>Point of.</p>
+      </div>
+      <div class="top_txt02">
+        <p class="footer_title">대표자 : </p>
+        <p>조수현</p>
+      </div>
+      <div class="top_txt03">
+        <p class="footer_title">사업자등록번호 : </p>
+        <p>1213215122</p>
+      </div>
+      <div class="top_txt04">
+        <p class="footer_title">[사업자정보확인] : </p>
+        <p>통신판매업 신고 2026 부산 동래구 0283호</p>
+      </div>
+      <div class="top_txt05">
+        <p class="footer_title">전화번호 : </p>
+        <p>010-0111-1111</p>
+      </div>
+      <div class="top_txt06">
+        <p class="footer_title">팩스 : </p>
+        <p>010-0111-1111</p>
+      </div>
+      <div class="top_txt07">
+        <p class="footer_title">주소 : </p>
+        <p>13289 부산광역시 동래구 명장로</p>
+      </div>
+      <div class="top_txt08">
+        <p class="footer_title">개인정보관리책임 : </p>
+        <p>조수현(이메일@naver.com)</p>
+      </div>
+      <div class="top_txt09">
+        <p>구매안전서비스 : 안전거래를 위해 현금등으로 결제 시 저희 쇼핑몰이 가입한 PG에스크로 구매안전 서비스를 이용할 수 있습니다.</p>
+      </div>
+    </div><!--footer_top-->
+    <div class="footer_bot">
+      <div class="bot_box">
+        <div class="bot_txt01">
+          <p>고객문의 대표전화</p>
+          <p>010-0111-1111</p>
+        </div>
+        <div class="bot_txt02">
+          <p>입금계좌안내</p>
+          <div class="bot_bot">
+            <p>하나은행 030-22222-22222</p>
+            <p>신한은행 030-12345-22655</p>
+          </div>
+          <p>예금주 : 조수현</p>
+        </div>
+      </div>
+      <div class="footer_sns">
+        <a href="#!">
+          <div class="sns_box">
+            <div class="sns_img">
+              <img src="./img/icon_f.png" alt="">
+            </div>
+            <p>페이스북</p>
+          </div>
+        </a>
+        <a href="#!">
+          <div class="sns_box">
+            <div class="sns_img">
+              <img src="./img/icon_i.png" alt="">
+            </div>
+            <p>인스타그램</p>
+          </div>
+        </a>
+        <a href="#!">
+          <div class="sns_box">
+            <div class="sns_img">
+              <img src="./img/icon_t.png" alt="">
+            </div>
+            <p>카카오톡</p>
+          </div>
+        </a>
+        <a href="#!">
+          <div class="sns_box">
+            <div class="sns_img">
+              <img src="./img/icon_y.png" alt="">
+            </div>
+            <p>유튜브</p>
+          </div>
+        </a>
+      </div>
+    </div><!--footer_bot-->
+  </footer><!--footer-->
+  <div class="bar">
+    <a href="./index.html">
+      <div class="home_btn">
+        <div class="btn_img">
+          <img src="./img/5_iconcopy.png" alt="">
+        </div>
+        <p>홈</p>
+      </div>
+    </a>
+
+    <a href="./gnb.html">
+      <div class="cate_btn">
+        <div class="btn_img">
+          <img src="./img/icon_gcopy.png" alt="">
+        </div>
+        <p>카테고리</p>
+      </div>
+    </a>
+
+    <a href="#!">
+      <div class="mark_btn">
+        <div class="btn_img">
+          <img src="./img/icon_bcopy.png" alt="">
+        </div>
+        <p>찜</p>
+      </div>
+    </a>
+
+    <a href="./mypage.html">
+      <div class="my_btn">
+        <div class="btn_img">
+          <img src="./img/icon_ucopy.png" alt="">
+        </div>
+        <p>마이페이지</p>
+      </div>
+    </a>
+
+  </div><!--bar-->
+</body>
+
+</html>
