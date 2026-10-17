@@ -39,4 +39,4 @@ Point of.는 20~30대 고객을 타깃으로 한 액세서리 쇼핑몰 프로�
 * 모바일 사용성을 고려한 UI개선 및 화면별 레이아웃 설계
 
 ### 배포 링크(Live Demo)
-[Point of. 모바일 바로가기]https://03josuhyun.github.io/mobile-shopping/
+[Point of. 모바일 바로가기](https://03josuhyun.github.io/mobile-shopping/)
