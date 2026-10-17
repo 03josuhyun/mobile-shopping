@@ -28,6 +28,57 @@ Point of.는 20~30대 고객을 타깃으로 한 액세서리 쇼핑몰 프로�
   * 하트 이모티콘 클릭 시 이미지 변경을 통해 찜하기 상태를 시각적으로 표현
   * 찜하기 안내 팝업을 일정 시간 동안 표시한 후 자동으로 닫히도록 구현
 
+### 코드 리뷰
+* **1. 카테고리 탭 전환**
+```javascript
+const onTab01 = $('.today .today_tab ul li');
+const onSheet01 = $('.today .today_sheet>div');
+
+onTab01.on('click', function () {
+  onTab01.removeClass('tab_on01');
+  $(this).addClass('tab_on01');
+
+  const index01 = $(this).index();
+
+  onSheet01.removeClass('sheet_on01');
+  onSheet01.eq(index01).addClass('sheet_on01');
+});
+```
+카테고리 탭을 클릭하면 선택된 탭의 활성화 스타일을 변경하고, 해당 카테고리에 맞는 상품 목록으로 표시하도록 구현했습니다.
+* **removeClass()** : 기존 활성화 클래스를 제거합니다.
+* **$(this).addClass** : 클릭한 탭을 확성화합니다.
+* **index()** : 선택한 탭의 순서를 확인합니다.
+* **eq(index01)** : 같은 순서에 해당하는 상품 영역을 선택합니다.
+<br>
+탭과 콘텐츠의 순서를 일치시켜 하나의 클릭 이벤트로 전환하도록 구성했습니다. 향후에는 공톤 클래스를 활용해 중복 코드를 줄이고, 접근성을 위해 탭의 선택 상태도 함께 관리할 수 있습니다.
+
+* **2. 상품 더보기**
+```javascript
+$('.today_item_add').each(function () {
+  const btn = $(this);
+  const item02 = btn.prev('.item02');
+
+  let index02 = false;
+
+  btn.on('click', function () {
+    if (index02 === false) {
+      item02.css('display', 'flex');
+      index02 = true;
+    } else {
+      item02.css('display', 'none');
+      index02 = false;
+    }
+  });
+});
+```
+상품목록을 처음부터 모두 노출하지 않고, 사용자가 더보기 버튼을 클릭했을 때 추가 상품을 확인할 수 있도록 구현했습니다.
+* **each()** : 각 더보기 버튼에 이벤트를 등록합니다.
+* **prev('.item02')** : 버튼 바로 앞에 있는 추가 상품 영역을 선택합니다.
+* **Boolean** : 변수 index02를 사용해 표시 상태를 관리합니다.
+* 클릭할 때마다 상품 영역을 표시하거나 숨깁니다.
+<br>
+현재는 Boolean 변수로 표시 상태를 직접 관리하고 있습니다. css 클래스와 toggleClass()를 활용하면 표시 상태와 스타일을 분리해 관리하기 쉬워집니다. 또한 버튼 문구를 '더보기'와 '접기'로 변경하면 사용자가 현재 상태를 더 쉽게 이해할 수 있습니다.
+
 ### 기술 스택
 * HTML5
 * CSS3
