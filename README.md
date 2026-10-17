@@ -29,7 +29,7 @@ Point of.는 20~30대 고객을 타깃으로 한 액세서리 쇼핑몰 프로�
   * 찜하기 안내 팝업을 일정 시간 동안 표시한 후 자동으로 닫히도록 구현
 
 ### 코드 리뷰
-* **1. 카테고리 탭 전환**
+**1. 카테고리 탭 전환**
 ```javascript
 const onTab01 = $('.today .today_tab ul li');
 const onSheet01 = $('.today .today_sheet>div');
@@ -52,7 +52,7 @@ onTab01.on('click', function () {
 <br>
 탭과 콘텐츠의 순서를 일치시켜 하나의 클릭 이벤트로 전환하도록 구성했습니다. 향후에는 공톤 클래스를 활용해 중복 코드를 줄이고, 접근성을 위해 탭의 선택 상태도 함께 관리할 수 있습니다.
 
-* **2. 상품 더보기**
+**2. 상품 더보기**
 ```javascript
 $('.today_item_add').each(function () {
   const btn = $(this);
