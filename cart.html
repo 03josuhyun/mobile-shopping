@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=none">
+  <title>Point of.</title>
+  <link rel="shortcut icon" href="./img/f.png" type="image/x-icon">
+  <!---->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./cart.css">
+  <script src="./cart.js"></script>
+</head>
+
+<body>
+  <header class="header" id="top_btn">
+    <a href="./sub.html">
+      <button type="button" class="back" id="back">
+        <img src="./img/angle_left_solidcopy.png" alt="">
+      </button>
+    </a>
+    <div class="btn">
+      <a href="./index.html">
+        <button type="button" class="home_btn">
+          <img src="./img/5_iconcopy.png" alt="">
+        </button>
+      </a>
+      <p class="header_text">장바구니</p>
+      <a href="#!">
+        <button type="button" class="search_btn">
+          <img src="./img/4_iconcopy.png" alt="">
+        </button>
+      </a>
+      <a href="./cart.html">
+        <button type="button" class="cart_btn">
+          <img src="./img/1_iconcopy.png" alt="">
+        </button>
+      </a>
+    </div>
+  </header><!--header-->
+  <div class="wrap">
+    <div class="cart_total">
+      <input type="checkbox" class="total_btn" id="total_btn" checked>
+      <label for="total_btn">전체선택</label>
+    </div>
+    <div class="cart">
+      <div class="cart_item">
+        <div class="cart_top">
+          <input type="checkbox" class="item_btn01 item_btn" id="item_btn" checked>
+          <div class="cart_topright">
+            <div class="gift_img">
+              <img src="./img/gift-solid.png" alt="">
+            </div>
+            <div class="heart_img">
+              <img src="./img/icon_img_2.png" alt="">
+            </div>
+            <div class="x_img">
+              <img src="./img/x_iconcopy.png" alt="">
+            </div>
+          </div>
+        </div><!--cart_top-->
+        <div class="cart_mid">
+          <div class="item_img">
+            <img src="./img/br_copy07.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="item_name">
+              <p>스틸라이트 비즈 팔찌</p>
+            </div>
+            <div class="item_color">
+              <p>색상 : black</p>
+            </div>
+            <div class="item_num">
+              <div class="item_count">
+                <button class="btn_minus01 btn">-</button>
+                <p class="count_box01">1</p>
+                <button class="btn_plus01 btn">+</button>
+              </div>
+              <div class="item_midright">
+                <div class="item_change">
+                  <p>변경</p>
+                </div>
+                <div class="item_cupon01 item_cupon">
+                  <p>쿠폰적용</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--cart_mid-->
+        <div class="cart_bot">
+          <div class="cupon_txt01">
+            <p>쿠폰할인</p>
+            <p>0원</p>
+          </div>
+          <hr>
+          <div class="cupon_txt02">
+            <p>결제금액</p>
+            <p class="item_price01">22,000원</p>
+          </div>
+          <div class="cupon_txt03">
+            <p>적립예정 포인트</p>
+            <p>0000원</p>
+          </div>
+        </div>
+      </div><!--cart_item01-->
+      <hr>
+      <div class="cart_item">
+        <div class="cart_top">
+          <input type="checkbox" class="item_btn02 item_btn" id="item_btn" checked>
+          <div class="cart_topright">
+            <div class="gift_img">
+              <img src="./img/gift-solid.png" alt="">
+            </div>
+            <div class="heart_img">
+              <img src="./img/icon_img_2.png" alt="">
+            </div>
+            <div class="x_img">
+              <img src="./img/x_iconcopy.png" alt="">
+            </div>
+          </div>
+        </div><!--cart_top-->
+        <div class="cart_mid">
+          <div class="item_img">
+            <img src="./img/br_copy08.jpg" alt="">
+          </div>
+          <div class="item_detail">
+            <div class="item_name">
+              <p>T스마일 슬라이더 팔찌</p>
+            </div>
+            <div class="item_color">
+              <p>색상 : black</p>
+            </div>
+            <div class="item_num">
+              <div class="item_count">
+                <button class="btn_minus02 btn">-</button>
+                <p class="count_box02">1</p>
+                <button class="btn_plus02 btn">+</button>
+              </div>
+              <div class="item_midright">
+                <div class="item_change">
+                  <p>변경</p>
+                </div>
+                <div class="item_cupon02 item_cupon">
+                  <p>쿠폰적용</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--cart_mid-->
+        <div class="cart_bot">
+          <div class="cupon_txt01">
+            <p>쿠폰할인</p>
+            <p>0원</p>
+          </div>
+          <hr>
+          <div class="cupon_txt02">
+            <p>결제금액</p>
+            <p class="item_price02">26,000원</p>
+          </div>
+          <div class="cupon_txt03">
+            <p>적립예정 포인트</p>
+            <p>0000원</p>
+          </div>
+        </div>
+      </div><!--cart_item02-->
+    </div><!--cart-->
+    <div class="total_price">
+      <div class="total_txt01">
+        <p>총 상품금액</p>
+        <p>00000원</p>
+      </div>
+      <div class="total_txt02">
+        <p>총 할인금액</p>
+        <p>00000원</p>
+      </div>
+      <div class="total_txt03">
+        <p>총 배송비</p>
+        <p>0원</p>
+      </div>
+      <hr>
+      <div class="total_txt04">
+        <p>총 결제금액</p>
+        <p class="total">48,000원</p>
+      </div>
+      <div class="total_txt05">
+        <p>총 적립예정 포인트</p>
+        <p>00000원</p>
+      </div>
+    </div><!--total_price-->
+    <div class="notice_box">
+      <div class="notice_title">
+        <p>장바구니 이용안내</p>
+      </div>
+      <ul class="notice">
+        <li>- 상품옵션에 따라 결제 금액이 변경될 수 있습니다</li>
+        <li>- 장바구니에 담긴 상품은 90일간 유지됩니다 (회원만 가능)</li>
+        <li>- 장바구니 보관기간 중 상품 가격이나 혜택이 변동될 수 있습니다</li>
+        <li>- 장바구니의 상품을 찜하시면 지속적으로 보실 수 있습니다</li>
+      </ul>
+    </div>
+  </div><!--wrap-->
+  <div class="bar">
+    <div class="bar_txt">
+      <p class="total_cnt">(총2개)</p>
+      <p class="total">48,000원</p>
+      <p>결제하기</p>
+    </div>
+  </div><!--bar-->
+  <div class="cupon_popup01">
+    <div class="cupon_title">
+      <p>보유쿠폰</p>
+      <p class="cupon_cnt01">(2)</p>
+    </div>
+    <div class="cupon_x">
+      <img src="./img/x_iconcopy.png" alt="">
+    </div>
+    <div class="cupon_box">
+      <div class="cupon">
+        <input type="checkbox" id="cupon01" class="cupon01_01">
+        <label for="cupon01">
+          <p>4,400(20%)</p>
+          <p>[Point of. 웰컴쿠폰] 20%쿠폰</p>
+        </label>
+      </div><!--cupon-->
+      <div class="cupon">
+        <input type="checkbox" id="cupon02" class="cupon01_02">
+        <label for="cupon02">
+          <p>2,200(10%)</p>
+          <p>[쇼핑몰 그랜드페스타] 10%쿠폰</p>
+        </label>
+      </div><!--cupon-->
+    </div><!--cupon_box-->
+    <div class="cupon_result">
+      <p class="cupon_total">0원</p>
+      <p>할인받기</p>
+      <p class="cupon_cnt02">(0)</p>
+    </div><!--cupon_result-->
+  </div>
+</body>
+
+</html>

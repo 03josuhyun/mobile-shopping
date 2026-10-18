@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=none">
+  <title>Point of.</title>
+  <link rel="shortcut icon" href="./img/f.png" type="image/x-icon">
+  <!---->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./sub.css">
+  <script src="./sub.js"></script>
+</head>
+
+<body>
+  <header class="header" id="top_btn">
+    <button type="button" class="back" id="back">
+      <img src="./img/angle_leftcopy.png" alt="">
+    </button>
+    <div class="select">
+      <div class="selected">
+        <p>팔찌</p>
+      </div>
+      <ul class="category">
+        <li>
+          <a href="#!">팔찌</a>
+        </li>
+        <li>
+          <a href="#!">귀걸이</a>
+        </li>
+        <li>
+          <a href="#!">목걸이</a>
+        </li>
+        <li>
+          <a href="#!">반지</a>
+        </li>
+        <li>
+          <a href="#!">헤어ACC</a>
+        </li>
+        <li>
+          <a href="#!">전자제품ACC</a>
+        </li>
+        <li>
+          <a href="#!">키링</a>
+        </li>
+      </ul>
+    </div>
+    <button type="button" class="search_btn" id="search_btn">
+      <img src="./img/4_iconcopy.png" alt="">
+    </button>
+    <button type="button" class="cart_btn" id="cart_btn">
+      <img src="./img/1_iconcopy.png" alt="">
+    </button>
+  </header>
+  <div class="wrap">
+    <div class="top">
+      <div class="top_left">
+        <p>총</p>
+        <p>888</p>
+        <p>건</p>
+      </div>
+      <div class="top_right">
+        <button type="button" class="option_btn" id="option_btn">
+          <i class="fa-solid fa-sliders"></i>필터
+        </button>
+      </div>
+    </div><!--top-->
+    <div class="option_box">
+      <div class="option_close">
+        <img src="./img/x_iconcopy.png" alt="">
+      </div>
+      <div class="price">
+        <div class="price_title">
+          <p>가격</p>
+        </div>
+        <div class="price_detail">
+          <input type="checkbox" id="chk01">
+          <label for="chk01" class="circle"></label>
+          <span>~ 10000원</span>
+
+          <input type="checkbox" id="chk02">
+          <label for="chk02" class="circle"></label>
+          <span>~ 20000원</span>
+
+          <input type="checkbox" id="chk03">
+          <label for="chk03" class="circle"></label>
+          <span>~ 30000원</span>
+
+          <input type="checkbox" id="chk04">
+          <label for="chk04" class="circle"></label>
+          <span>~ 40000원</span>
+
+          <input type="checkbox" id="chk05">
+          <label for="chk05" class="circle"></label>
+          <span>~ 50000원</span>
+        </div>
+      </div><!--price-->
+      <div class="color">
+        <div class="color_title">
+          <p>색상</p>
+        </div>
+        <div class="color_detail">
+          <div>
+            <input type="checkbox" id="chk06">
+            <label for="chk06" class="circle"></label>
+            <span class="red">red</span>
+          </div>
+
+
+          <div>
+            <input type="checkbox" id="chk07">
+            <label for="chk07" class="circle"></label>
+            <span class="blue">blue</span>
+          </div>
+
+
+          <div>
+            <input type="checkbox" id="chk08">
+            <label for="chk08" class="circle"></label>
+            <span class="pink">pink</span>
+          </div>
+
+
+          <div>
+            <input type="checkbox" id="chk09">
+            <label for="chk09" class="circle"></label>
+            <span class="black">black</span>
+          </div>
+
+
+          <div>
+            <input type="checkbox" id="chk10">
+            <label for="chk10" class="circle"></label>
+            <span class="purple">purple</span>
+          </div>
+
+
+          <div>
+            <input type="checkbox" id="chk11">
+            <label for="chk11" class="circle"></label>
+            <span class="yellow">yellow</span>
+          </div>
+
+
+          <div>
+            <input type="checkbox" id="chk12">
+            <label for="chk12" class="circle"></label>
+            <span class="white">white</span>
+          </div>
+
+        </div>
+      </div><!--color-->
+      <button type="button" class="apply_btn">적용</button>
+    </div><!--option_box-->
+    <div class="item_box">
+      <div class="item">
+        <a href="./detail.html">
+          <div class="item_img">
+            <img src="./img/detail_item_copy.png" alt="">
+          </div>
+        </a>
+        <div class="item_detail">
+          <div class="detail_left">
+            <a href="./detail.html">
+              <div class="name">
+                <p>싱글 링크 팔찌</p>
+              </div>
+            </a>
+            <div class="cash">
+              <div class="cash_top">
+                <p>10%</p>
+                <del>10,000원</del>
+              </div>
+              <div class="cash_bot">
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail_right">
+            <div class="cart">
+              <img src="./img/icon_img_1.png" alt="">
+            </div>
+            <div class="heart">
+              <img src="./img/icon_img_2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!--item-->
+      <div class="item">
+        <a href="#!">
+          <div class="item_img">
+            <img src="./img/br_1.jpeg" alt="">
+          </div>
+        </a>
+        <div class="item_detail">
+          <div class="detail_left">
+            <a href="#!">
+              <div class="name">
+                <p>그대 걷던 길 팔찌</p>
+              </div>
+            </a>
+            <div class="cash">
+              <div class="cash_top">
+                <p>10%</p>
+                <del>10,000원</del>
+              </div>
+              <div class="cash_bot">
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail_right">
+            <div class="cart">
+              <img src="./img/icon_img_1.png" alt="">
+            </div>
+            <div class="heart">
+              <img src="./img/icon_img_2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!--item-->
+      <div class="item">
+        <a href="#!">
+          <div class="item_img">
+            <img src="./img/br_2.jpg" alt="">
+          </div>
+        </a>
+        <div class="item_detail">
+          <div class="detail_left">
+            <a href="#!">
+              <div class="name">
+                <p>글로우 체인 스틱 큐빅 팔찌</p>
+              </div>
+            </a>
+            <div class="cash">
+              <div class="cash_top">
+                <p>10%</p>
+                <del>10,000원</del>
+              </div>
+              <div class="cash_bot">
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail_right">
+            <div class="cart">
+              <img src="./img/icon_img_1.png" alt="">
+            </div>
+            <div class="heart">
+              <img src="./img/icon_img_2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!--item-->
+      <div class="item">
+        <a href="#!">
+          <div class="item_img">
+            <img src="./img/br_3.jpg" alt="">
+          </div>
+        </a>
+        <div class="item_detail">
+          <div class="detail_left">
+            <a href="#!">
+              <div class="name">
+                <p>데이지 참 핑크 원석 팔찌</p>
+              </div>
+            </a>
+            <div class="cash">
+              <div class="cash_top">
+                <p>10%</p>
+                <del>10,000원</del>
+              </div>
+              <div class="cash_bot">
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail_right">
+            <div class="cart">
+              <img src="./img/icon_img_1.png" alt="">
+            </div>
+            <div class="heart">
+              <img src="./img/icon_img_2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!--item-->
+      <div class="item">
+        <a href="#!">
+          <div class="item_img">
+            <img src="./img/br_4.jpeg" alt="">
+          </div>
+        </a>
+        <div class="item_detail">
+          <div class="detail_left">
+            <a href="#!">
+              <div class="name">
+                <p>Silver 925 볼 뱀줄 체인</p>
+              </div>
+            </a>
+            <div class="cash">
+              <div class="cash_top">
+                <p>10%</p>
+                <del>10,000원</del>
+              </div>
+              <div class="cash_bot">
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail_right">
+            <div class="cart">
+              <img src="./img/icon_img_1.png" alt="">
+            </div>
+            <div class="heart">
+              <img src="./img/icon_img_2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!--item-->
+      <div class="item">
+        <a href="#!">
+          <div class="item_img">
+            <img src="./img/br_5.jpg" alt="">
+          </div>
+        </a>
+        <div class="item_detail">
+          <div class="detail_left">
+            <a href="#!">
+              <div class="name">
+                <p>실크 라인 팔찌</p>
+              </div>
+            </a>
+            <div class="cash">
+              <div class="cash_top">
+                <p>10%</p>
+                <del>10,000원</del>
+              </div>
+              <div class="cash_bot">
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail_right">
+            <div class="cart">
+              <img src="./img/icon_img_1.png" alt="">
+            </div>
+            <div class="heart">
+              <img src="./img/icon_img_2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!--item-->
+      <div class="item">
+        <a href="#!">
+          <div class="item_img">
+            <img src="./img/br_6.jpg" alt="">
+          </div>
+        </a>
+        <div class="item_detail">
+          <div class="detail_left">
+            <a href="#!">
+              <div class="name">
+                <p>스네티크 실키 체인 뱀줄 925 실버 팔찌</p>
+              </div>
+            </a>
+            <div class="cash">
+              <div class="cash_top">
+                <p>10%</p>
+                <del>10,000원</del>
+              </div>
+              <div class="cash_bot">
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail_right">
+            <div class="cart">
+              <img src="./img/icon_img_1.png" alt="">
+            </div>
+            <div class="heart">
+              <img src="./img/icon_img_2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!--item-->
+      <div class="item">
+        <a href="#!">
+          <div class="item_img">
+            <img src="./img/br_7.jpg" alt="">
+          </div>
+        </a>
+        <div class="item_detail">
+          <div class="detail_left">
+            <a href="#!">
+              <div class="name">
+                <p>라일락 담수진주 팔찌</p>
+              </div>
+            </a>
+            <div class="cash">
+              <div class="cash_top">
+                <p>10%</p>
+                <del>10,000원</del>
+              </div>
+              <div class="cash_bot">
+                <p>5,000원</p>
+              </div>
+            </div>
+          </div>
+          <div class="detail_right">
+            <div class="cart">
+              <img src="./img/icon_img_1.png" alt="">
+            </div>
+            <div class="heart">
+              <img src="./img/icon_img_2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div><!--item-->
+
+    </div><!--item_box-->
+    <div class="sheet_num">
+      <button type="button" class="left">
+        <img src="./img/angle_left.png" alt="">
+      </button>
+      <div class="num_box">
+        <button type="button" class="num">1</button>
+        <button type="button" class="num">2</button>
+        <button type="button" class="num">3</button>
+        <button type="button" class="num">...</button>
+        <button type="button" class="num">5</button>
+        <button type="button" class="num">6</button>
+      </div>
+      <button type="button" class="right">
+        <img src="./img/angle_right.png" alt="">
+      </button>
+    </div>
+  </div><!--wrap-->
+  <footer class="footer">
+    <input type="checkbox" id="footer_btn">
+    <label for="footer_btn" class="footer_btn">
+      Point of. 사업자 정보
+      <i class="fa-solid fa-angle-down"></i>
+    </label>
+    <div class="footer_top">
+      <div class="top_txt01">
+        <p class="footer_title">법인명 : </p>
+        <p>Point of.</p>
+      </div>
+      <div class="top_txt02">
+        <p class="footer_title">대표자 : </p>
+        <p>조수현</p>
+      </div>
+      <div class="top_txt03">
+        <p class="footer_title">사업자등록번호 : </p>
+        <p>1213215122</p>
+      </div>
+      <div class="top_txt04">
+        <p class="footer_title">[사업자정보확인] : </p>
+        <p>통신판매업 신고 2026 부산 동래구 0283호</p>
+      </div>
+      <div class="top_txt05">
+        <p class="footer_title">전화번호 : </p>
+        <p>010-0111-1111</p>
+      </div>
+      <div class="top_txt06">
+        <p class="footer_title">팩스 : </p>
+        <p>010-0111-1111</p>
+      </div>
+      <div class="top_txt07">
+        <p class="footer_title">주소 : </p>
+        <p>13289 부산광역시 동래구 명장로</p>
+      </div>
+      <div class="top_txt08">
+        <p class="footer_title">개인정보관리책임 : </p>
+        <p>조수현(이메일@naver.com)</p>
+      </div>
+      <div class="top_txt09">
+        <p>구매안전서비스 : 안전거래를 위해 현금등으로 결제 시 저희 쇼핑몰이 가입한 PG에스크로 구매안전 서비스를 이용할 수 있습니다.</p>
+      </div>
+    </div><!--footer_top-->
+    <div class="footer_bot">
+      <div class="bot_box">
+        <div class="bot_txt01">
+          <p>고객문의 대표전화</p>
+          <p>010-0111-1111</p>
+        </div>
+        <div class="bot_txt02">
+          <p>입금계좌안내</p>
+          <div class="bot_bot">
+            <p>하나은행 030-22222-22222</p>
+            <p>신한은행 030-12345-22655</p>
+          </div>
+          <p>예금주 : 조수현</p>
+        </div>
+      </div>
+      <div class="footer_sns">
+        <a href="#!">
+          <div class="sns_box">
+            <div class="sns_img">
+              <img src="./img/icon_f.png" alt="">
+            </div>
+            <p>페이스북</p>
+          </div>
+        </a>
+        <a href="#!">
+          <div class="sns_box">
+            <div class="sns_img">
+              <img src="./img/icon_i.png" alt="">
+            </div>
+            <p>인스타그램</p>
+          </div>
+        </a>
+        <a href="#!">
+          <div class="sns_box">
+            <div class="sns_img">
+              <img src="./img/icon_t.png" alt="">
+            </div>
+            <p>카카오톡</p>
+          </div>
+        </a>
+        <a href="#!">
+          <div class="sns_box">
+            <div class="sns_img">
+              <img src="./img/icon_y.png" alt="">
+            </div>
+            <p>유튜브</p>
+          </div>
+        </a>
+      </div>
+    </div><!--footer_bot-->
+  </footer>
+  <<div class="bar">
+    <a href="./index.html">
+      <div class="home_btn">
+        <div class="btn_img">
+          <img src="./img/5_iconcopy.png" alt="">
+        </div>
+        <p>홈</p>
+      </div>
+    </a>
+
+    <a href="./gnb.html">
+      <div class="cate_btn">
+        <div class="btn_img">
+          <img src="./img/icon_gcopy.png" alt="">
+        </div>
+        <p>카테고리</p>
+      </div>
+    </a>
+
+    <a href="#!">
+      <div class="mark_btn">
+        <div class="btn_img">
+          <img src="./img/icon_bcopy.png" alt="">
+        </div>
+        <p>찜</p>
+      </div>
+    </a>
+
+    <a href="#!">
+      <div class="my_btn">
+        <div class="btn_img">
+          <img src="./img/icon_ucopy.png" alt="">
+        </div>
+        <p>마이페이지</p>
+      </div>
+    </a>
+    </div><!--bar-->
+    <div class="cart_popup">
+      <div class="cart_close">
+        <img src="./img/x_iconcopy.png" alt="">
+      </div>
+      <div class="cart_img">
+        <img src="./img/icon_img_1.png" alt="">
+      </div>
+      <div class="cart_txt">
+        <p>장바구니에 담겼습니다.</p>
+        <p>계속 쇼핑하겠습니까?</p>
+      </div>
+      <div class="btn_cart">
+        <span class="cart_ing">계속 쇼핑하기</span>
+        <span class="cart_next"><a href="#!">장바구니 보기</a></span>
+      </div>
+    </div><!--cart_popup-->
+    <div class="heart_popup">
+      <img src="./img/icon_img_2clickcopy.png" alt="">
+    </div>
+</body>
+
+</html>

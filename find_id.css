@@ -1,0 +1,223 @@
+/*---------------default_setting----------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*----------------------------------------------*/
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #FDFBF7;
+}
+
+/*------------------------------------------------*/
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #F3ECE3;
+}
+.header .back {
+  border: none;
+  width: 45px;
+  height: 45px;
+  background-color: #F3ECE3;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.wrap {
+  width: calc(100% - 10px);
+  margin: 0 auto;
+}
+.wrap .find_id .find_id_title {
+  text-align: center;
+  padding-top: 30px;
+  margin: 30px auto;
+  font-size: 30px;
+}
+.wrap .find_id .find {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+.wrap .find_id .find .find_tab {
+  display: flex;
+}
+.wrap .find_id .find .find_tab li {
+  width: 50%;
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .find_id .find .find_tab .on_tab {
+  border-bottom: 1px solid black;
+}
+.wrap .find_id .find .find_sheet {
+  height: auto;
+}
+.wrap .find_id .find .find_sheet > div {
+  padding: 10px;
+  display: none;
+}
+.wrap .find_id .find .find_sheet > div .tel_name {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .find_id .find .find_sheet > div .tel_name label {
+  width: 20%;
+  line-height: 30px;
+}
+.wrap .find_id .find .find_sheet > div .tel_name .tel_find {
+  width: calc(80% - 10px);
+  border: none;
+  background-color: #FDFBF7;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .find_id .find .find_sheet > div .tel_tel {
+  width: 100%;
+  margin: 10px auto;
+}
+.wrap .find_id .find .find_sheet > div .tel_tel label {
+  width: 20%;
+  line-height: 30px;
+}
+.wrap .find_id .find .find_sheet > div .tel_tel .tel_box {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .find_id .find .find_sheet > div .tel_tel .tel_box .tel_in {
+  width: 80%;
+  height: 30px;
+  display: flex;
+  line-height: 30px;
+}
+.wrap .find_id .find .find_sheet > div .tel_tel .tel_box .tel_in .tel {
+  margin-right: 2px;
+  border: none;
+  background-color: #FDFBF7;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .find_id .find .find_sheet > div .tel_tel .tel_box .tel_in input {
+  margin: 0 2px;
+  border: none;
+  background-color: #FDFBF7;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .find_id .find .find_sheet > div .tel_tel .tel_box .tel_btn {
+  padding: 0 2px;
+  line-height: 14px;
+  height: 30px;
+  font-size: 12px;
+  background-color: #F3ECE3;
+  border-radius: 5px;
+  border: none;
+}
+.wrap .find_id .find .find_sheet > div .tel_num {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .find_id .find .find_sheet > div .tel_num input {
+  width: 75%;
+  line-height: 30px;
+  border: none;
+  background-color: #FDFBF7;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .find_id .find .find_sheet > div .tel_num .btn_num {
+  width: calc(25% - 10px);
+  font-size: 12px;
+  line-height: 12px;
+  background-color: #F3ECE3;
+  border: none;
+  border-radius: 5px;
+}
+.wrap .find_id .find .find_sheet > div .btn_next {
+  display: block;
+  width: 50%;
+  line-height: 40px;
+  margin: 30px auto;
+  border: none;
+  background-color: #F3ECE3;
+  border-radius: 10px;
+}
+.wrap .find_id .find .find_sheet > div .email_name {
+  width: 100%;
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+.wrap .find_id .find .find_sheet > div .email_name label {
+  width: 20%;
+  line-height: 30px;
+}
+.wrap .find_id .find .find_sheet > div .email_name .email_find {
+  width: calc(80% - 10px);
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #FDFBF7;
+}
+.wrap .find_id .find .find_sheet > div .email_email {
+  width: 100%;
+  margin: 10px auto;
+}
+.wrap .find_id .find .find_sheet > div .email_email label {
+  width: 20%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .find_id .find .find_sheet > div .email_email .email_do {
+  width: 100%;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .find_id .find .find_sheet > div .email_email .email_do input {
+  width: 30%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #FDFBF7;
+}
+.wrap .find_id .find .find_sheet > div .email_email .email_do select {
+  width: calc(30% - 5px);
+  border: none;
+  background-color: #FDFBF7;
+}
+.wrap .find_id .find .find_sheet > div .next_btn {
+  display: block;
+  width: 50%;
+  line-height: 40px;
+  margin: 30px auto;
+  background-color: #F3ECE3;
+  border-radius: 10px;
+  border: none;
+}
+.wrap .find_id .find .find_sheet {
+  /*div*/
+}
+.wrap .find_id .find .find_sheet .on_sheet {
+  display: block;
+}
+.wrap .find_id {
+  /*find*/
+}
+.wrap {
+  /*find_id*/
+}
+
+/*wrap*//*# sourceMappingURL=find_id.css.map */

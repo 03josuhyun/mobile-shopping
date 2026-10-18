@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=none">
+  <title>Point of.</title>
+  <link rel="shortcut icon" href="./img/f.png" type="image/x-icon">
+  <!---->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <script src="//t1.kakaocdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <link rel="stylesheet" href="./log_detail.css">
+  <script src="./log_detail.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <button type="button" class="back" id="back">
+      <img src="./img/angle_left_solidcopy.png" alt="">
+    </button>
+  </header>
+  <div class="wrap">
+    <section class="log_detail">
+      <div class="log_detail_title">
+        <p>회원가입</p>
+      </div>
+      <div class="breadcrumb">
+        <p>약관동의</p>
+        <p>></p>
+        <p>정보입력</p>
+        <p>></p>
+        <p>가입완료</p>
+      </div>
+      <div class="log_basic">
+        <div class="log_basic_title">
+          <p>기본정보</p>
+          <p>*표시는 반드시 입력하셔야 하는 항목입니다.</p>
+        </div>
+        <hr>
+        <ul class="log_basic_detail">
+          <li class="name_box">
+            <label for="user_name">이름</label>
+            <input type="text" id="user_name" class="user_name" placeholder="이름">
+          </li>
+          <li class="gender_box">
+            <label for="user_gender">성별</label>
+            <div class="gender_btn">
+              <input type="radio" name="gender" id="user_women" checked>여성
+              <input type="radio" name="gender" id="user_men">남성
+            </div>
+          </li>
+          <li class="birth_box">
+            <label for="user_birth">생년월일</label>
+            <div class="birth">
+              <div class="birth_btn">
+                <input type="radio" name="date">양력
+                <input type="radio" name="date">음력
+              </div>
+              <div class="date_box">
+                <select name="user_birth" id="year">
+                  <option>선택</option>
+                  <option value="year">2026</option>
+                  <option value="year">2025</option>
+                  <option value="year">2024</option>
+                  <option value="year">2023</option>
+                  <option value="year">2022</option>
+                  <option value="year">2021</option>
+                  <option value="year">2020</option>
+                </select>년
+                <select name="user_birth" id="month">
+                  <option value="month">선택</option>
+                  <option value="month">1</option>
+                  <option value="month">2</option>
+                  <option value="month">3</option>
+                  <option value="month">4</option>
+                  <option value="month">5</option>
+                  <option value="month">6</option>
+                  <option value="month">7</option>
+                  <option value="month">8</option>
+                  <option value="month">9</option>
+                  <option value="month">10</option>
+                  <option value="month">11</option>
+                  <option value="month">12</option>
+                </select>월
+                <select name="user_birth" id="day">
+                  <option value="day">선택</option>
+                  <option value="day">1</option>
+                  <option value="day">2</option>
+                  <option value="day">3</option>
+                  <option value="day">4</option>
+                  <option value="day">5</option>
+                  <option value="day">6</option>
+                  <option value="day">7</option>
+                  <option value="day">8</option>
+                  <option value="day">9</option>
+                  <option value="day">10</option>
+                  <option value="day">11</option>
+                  <option value="day">12</option>
+                  <option value="day">13</option>
+                  <option value="day">14</option>
+                  <option value="day">15</option>
+                  <option value="day">16</option>
+                  <option value="day">17</option>
+                  <option value="day">18</option>
+                  <option value="day">19</option>
+                  <option value="day">20</option>
+                  <option value="day">21</option>
+                  <option value="day">22</option>
+                  <option value="day">23</option>
+                  <option value="day">24</option>
+                  <option value="day">25</option>
+                  <option value="day">26</option>
+                  <option value="day">27</option>
+                  <option value="day">28</option>
+                  <option value="day">29</option>
+                  <option value="day">30</option>
+                  <option value="day">31</option>
+                </select>일
+              </div>
+            </div>
+          </li>
+          <li class="nationality_box">
+            <label for="user_nationality">국적</label>
+            <div class="nation_box">
+              <select name="nationality" id="nationality">
+                <option value="kor">한국</option>
+                <option value="usa">미국</option>
+                <option value="China">중국</option>
+                <option value="japan">일본</option>
+                <option value="thailand">태국</option>
+                <option value="hongkong">홍콩</option>
+                <option value="pilipinas">필리핀</option>
+                <option value="singapore">싱가포르</option>
+                <option value="canada">캐나다</option>
+                <option value="uk">영국</option>
+              </select>
+            </div>
+          </li>
+          <li class="id_box">
+            <label for="user_id">아이디</label>
+            <div class="id_in">
+              <div class="id_chck">
+                <input type="text" id="user_id" class="user_id" placeholder="5~16자 입력" required autofocus>
+                <button type="button" class="id_btn" id="id_btn">아이디 중복 체크</button>
+              </div>
+              <input type="text" id="user_id01" class="user_id01">
+            </div>
+          </li>
+          <li class="pw_box">
+            <label for="user_pw">비밀번호</label>
+            <div class="pw_chck">
+              <input type="text" id="user_pw" class="user_pw" placeholder="특수문자 넣어서 만들어주세요">
+              <button type="button" class="btn_pw">
+                비밀번호 <br>확인
+              </button>
+            </div>
+          </li>
+          <li class="email_box">
+            <label for="user_email">이메일</label>
+            <div class="email">
+              <div class="email_do">
+                <input type="text" id="user_email" class="user_email">
+                <span>@</span>
+                <input type="text" id="email" class="email">
+              </div>
+              <select name="emails" id="emails">
+                <option>직접입력</option>
+                <option>naver.com</option>
+                <option>google.com</option>
+                <option>daum.net</option>
+                <option>apple.com</option>
+              </select>
+            </div>
+          </li>
+          <li class="addr_box">
+            <label for="user_addr">주소</label>
+            <div class="addr_box00">
+              <div class="addr_box01">
+                <input type="text" id="user_addr" class="user_addr" placeholder="우편번호">
+                <button type="button" id="addr_find" class="addr_find">주소검색</button>
+              </div>
+              <div class="addr_box02">
+                <input type="text" id="user_addr01" class="user_addr01" placeholder="기본주소">
+                <input type="text" id="user_addr02" class="user_addr02" placeholder="나머지 주소">
+              </div>
+            </div>
+          </li>
+          <li class="tel_box">
+            <label for="user_tel">전화번호</label>
+            <div class="tele_box">
+              <div class="tele_in">
+                <select name="tel" id="tel">
+                  <option>선택</option>
+                  <option>010</option>
+                  <option>051</option>
+                </select>
+                - <input type="text" id="tel_second" size="10px">
+                - <input type="text" id="tel_third" size="10px">
+              </div>
+              <div class="tele_btn">
+                <button type="button" class="tel_btn" id="tel_btn">전화번호 확인</button>
+              </div>
+            </div>
+          </li>
+        </ul><!--log_basic_detail-->
+      </div><!--log_basic-->
+      <div class="deli">
+        <div class="deli_title">
+          <p>배송 정보</p>
+        </div>
+        <hr>
+        <ul class="deli_box">
+          <input type="checkbox" class="deli_btn" id="deli_btn">
+          <label for="deli_btn">위의 주소와 배송정보가 같습니다</label>
+          <li class="deli_name_box">
+            <label for="deli_name">이름 : </label>
+            <input type="text" class="deli_name" id="deli_name">
+          </li>
+          <li class="deli_tel_box">
+            <label for="deli_tel">전화번호 : </label>
+            <input type="text" class="deli_tel" id="deli_tel">
+          </li>
+          <li class="deli_addr_box">
+            <label for="deli_addr">주소 : </label>
+            <input type="text" class="deli_addr" id="deli_addr">
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="next_btn">
+        가입하기
+      </button>
+    </section>
+  </div><!--wrap-->
+  <div class="popup" id="popup">
+    <div class="next_txt">
+      <div class="txt01">
+        <div>
+          <img src="./img/p_icon.png" alt="">
+        </div>
+
+        <p>웰컴 적립금</p>
+        <p>가입 즉시 현금처럼 쓰는 포인트 지급</p>
+      </div>
+      <div class="txt02">
+        <div>
+          <img src="./img/c_icon.png" alt="">
+        </div>
+        <p>할인 쿠폰</p>
+        <p>첫 구매나 특정 금액이상 구매 시 적용 가능한 쿠폰 발급</p>
+      </div>
+    </div>
+    <button type="button" id="popup_btn" class="popup_btn">확인</button>
+  </div><!--popup-->
+</body>
+
+</html>

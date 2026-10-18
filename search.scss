@@ -1,0 +1,271 @@
+/*---------------default_setting----------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*----------------------------------------------*/
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #FDFBF7;
+}
+
+@mixin btn {
+  border: none;
+  width: 45px;
+  height: 45px;
+  background-color: #F3ECE3;
+}
+
+@mixin img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@mixin image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/**/
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  position: relative;
+  background-color: #F3ECE3;
+
+  .back {
+    @include btn;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .header_text {
+    position: absolute;
+    top: 15px;
+    left: calc(50% - 20px);
+    font-weight: bold
+  }
+
+  .cart_btn {
+    @include btn;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+}
+
+/*header*/
+.wrap {
+  .search_box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+
+    .search {
+      display: flex;
+      width: calc(100% - 20px);
+      height: 40px;
+      border-radius: 20px;
+      margin: 10px auto;
+      overflow: hidden;
+
+      input {
+        width: 90%;
+        height: 40px;
+        background-color: #eee;
+        border: none;
+      }
+
+      i {
+        width: 10%;
+        font-size: 22px;
+        line-height: 40px;
+        background-color: #eee;
+      }
+    }
+  }
+
+  /*search_box*/
+
+  .recent_box {
+    width: calc(100% - 20px);
+    margin: 20px auto;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ccc;
+
+    .recent_title {
+      font-size: 16px;
+      padding: 2px;
+    }
+
+    .recent {
+      display: flex;
+      padding: 5px;
+
+      .recent_text {
+        margin: 0 5px;
+        padding: 2px;
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+
+        p {
+          margin-left: 2px;
+          line-height: 25px;
+        }
+
+        >div {
+          width: 15px;
+          height: 15px;
+          margin: 5px 4px;
+
+          img {
+            @include img;
+          }
+        }
+      }
+    }
+  }
+
+  /*recent_box*/
+
+  .popular_text_box {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+
+    .popular_title {
+      font-size: 16px;
+      padding: 2px;
+    }
+
+    .popular {
+      height: 30px;
+      overflow: hidden;
+      margin: 16px 5px;
+
+      .popular_box {
+        width: calc(100% - 10px);
+        height: 300px;
+        margin: 0 auto;
+        animation: fadeInUp 14s infinite;
+
+        .popular_text {
+          display: flex;
+          justify-content: left;
+          line-height: 30px;
+
+          p:nth-child(1) {
+            font-weight: bold;
+            margin-right: 10px;
+          }
+        }
+
+        @keyframes fadeInUp {
+          0% {
+            transform: translateY(0);
+          }
+
+          10% {
+            transform: translateY(-30px);
+          }
+
+          20% {
+            transform: translateY(-60px);
+          }
+
+          30% {
+            transform: translateY(-90px);
+          }
+
+          40% {
+            transform: translateY(-120px);
+          }
+
+          50% {
+            transform: translateY(-150px);
+          }
+
+          60% {
+            transform: translateY(-180px);
+          }
+
+          70% {
+            transform: translateY(-210px);
+          }
+
+          80% {
+            transform: translateY(-240px);
+          }
+
+          90% {
+            transform: translateY(-270px);
+          }
+
+          100% {
+            transform: translateY(-300px);
+          }
+        }
+      }
+    }
+
+  }
+}
+
+/*wrap*/
+.bar {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+
+  >a {
+    width: 25%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #4A3E3D;
+
+    >div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+
+      .btn_img {
+        width: 30px;
+        height: 30px;
+
+        img {
+          @include img;
+        }
+      }
+    }
+  }
+}

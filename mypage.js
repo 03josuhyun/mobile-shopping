@@ -1,0 +1,13 @@
+$(function(){
+  $('.shopping_list_title').on('click',function(){
+    $('.shopping_list_box').fadeToggle();
+  });
+  /**/
+  $('.my_benefit_title').on('click',function(){
+    $('.my_benefit_box').fadeToggle();
+  });
+  /**/
+  $('.user_info_title').on('click',function(){
+    $('.user_info_box').fadeToggle();
+  });
+});

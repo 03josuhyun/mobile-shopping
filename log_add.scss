@@ -1,0 +1,178 @@
+/*---------------default_setting----------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*----------------------------------------------*/
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #FDFBF7;
+}
+@mixin btn {
+  border: none;
+  width: 45px;
+  height: 45px;
+  background-color: #F3ECE3;
+}
+
+@mixin img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@mixin image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/**/
+.header {
+  width: 100%; height: 60px;
+  background-color: #F3ECE3;
+
+  .back {
+    @include btn;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
+.wrap {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+
+  .terms_box {
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+
+    .terms_title {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 30px;
+    }
+
+    .breadcrumb {
+      width: 200px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+      text-align: center;
+      display: flex;
+      color: #666;
+      font-size: 16px;
+
+      p:nth-child(1) {
+        color: black;
+        font-weight: bold;
+      }
+    }
+
+    /*breadcrumb*/
+    .terms_text {
+      width: calc(100% - 10px);
+      margin: 0 auto;
+    }
+    /*terms_text*/
+
+    .total_terms {
+      margin: 30px auto;
+      display: flex;
+      font-size: 14px;
+
+      label {
+        margin-left: 5px;
+      }
+
+      p{
+        margin-left: 30px;
+        color: #aaa;
+      }
+    }
+    /*total_terms*/
+
+    .terms01 {
+      border-bottom: 1px solid #ccc;
+
+      p{
+        display: none;
+        margin: 10px auto;
+        border: 1px solid #ccc;
+        height: 400px;
+        overflow: hidden;
+        overflow-y: scroll;
+        padding: 10px;
+      }
+    }
+    /*terms01*/
+
+    .terms02 {
+      border-bottom: 1px solid #ccc;
+
+      p {
+        display: none;
+        margin: 10px auto;
+        border: 1px solid #ccc;
+        height: 400px;
+        overflow: hidden;
+        overflow-y: scroll;
+        padding: 10px;
+      }
+    }
+    /*terms02*/
+
+    .terms03 {
+      border-bottom: 1px solid #ccc;
+
+      p {
+        display: none;
+        margin: 10px auto;
+        border: 1px solid #ccc;
+        height: 400px;
+        overflow: hidden;
+        overflow-y: scroll;
+        padding: 10px;
+      }
+    }
+  }
+  /*terms_box*/
+
+  .btn_box {
+    width: calc(100% - 100px);
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+
+    .btn_can {
+      padding: 5px 30px;
+      text-align: center;
+      line-height: 30px;
+      background-color: #f3ece3;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .btn_next {
+      padding: 5px 30px;
+      text-align: center;
+      line-height: 30px;
+      background-color: #f3ece3;
+      border: none;
+      border-radius: 10px;
+    }
+  }
+}
+
+/*wrap*/

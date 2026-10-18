@@ -1,0 +1,479 @@
+/*---------------default_setting----------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*----------------------------------------------*/
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #FDFBF7;
+}
+
+/*------------------------------------------------*/
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #F3ECE3;
+}
+.header .back {
+  border: none;
+  width: 45px;
+  height: 45px;
+  background-color: #F3ECE3;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.wrap {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+.wrap .log_detail {
+  width: 100%;
+  margin: 0 auto;
+}
+.wrap .log_detail .log_detail_title {
+  text-align: center;
+  padding-top: 60px;
+  margin: 30px auto;
+  font-size: 30px;
+}
+.wrap .log_detail .breadcrumb {
+  width: 200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+  display: flex;
+  color: #666;
+  font-size: 16px;
+}
+.wrap .log_detail .breadcrumb p:nth-child(2) {
+  color: black;
+  font-weight: bold;
+}
+.wrap .log_detail {
+  /*breacrumb*/
+}
+.wrap .log_detail .log_basic {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+.wrap .log_detail .log_basic .log_basic_title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin: 10px auto;
+}
+.wrap .log_detail .log_basic .log_basic_title p:nth-child(2) {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #aaa;
+}
+.wrap .log_detail .log_basic .log_basic_detail {
+  width: calc(100% - 10px);
+  margin: 20px auto;
+}
+.wrap .log_detail .log_basic .log_basic_detail .name_box {
+  width: 100%;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+.wrap .log_detail .log_basic .log_basic_detail .name_box label {
+  width: 30%;
+  font-size: 18px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .name_box .user_name {
+  width: calc(70% - 10px);
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #FDFBF7;
+}
+.wrap .log_detail .log_basic .log_basic_detail .gender_box {
+  width: 100%;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+.wrap .log_detail .log_basic .log_basic_detail .gender_box label {
+  width: 30%;
+  line-height: 30px;
+  font-size: 18px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .gender_box .gender_btn {
+  width: calc(70% - 10px);
+  line-height: 30px;
+  font-size: 18px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .gender_box .gender_btn input {
+  margin: 0 10px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .birth_box {
+  width: 100%;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+.wrap .log_detail .log_basic .log_basic_detail .birth_box label {
+  width: 30%;
+  font-size: 18px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .birth_box .birth {
+  width: calc(70% - 10px);
+  line-height: 30px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .birth_box .birth input {
+  margin: 0 10px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .nationality_box {
+  width: 100%;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+.wrap .log_detail .log_basic .log_basic_detail .nationality_box label {
+  width: 30%;
+  font-size: 18px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .nationality_box .nation_box {
+  width: calc(70% - 10px);
+  line-height: 30px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .id_box {
+  width: 100%;
+  line-height: 60px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .log_detail .log_basic .log_basic_detail .id_box label {
+  width: 30%;
+  font-size: 18px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .id_box .id_in {
+  width: 70%;
+  line-height: 60px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .id_box .id_in .id_chck {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .log_detail .log_basic .log_basic_detail .id_box .id_in .id_chck input {
+  width: calc(70% - 10px);
+  height: 30px;
+  background-color: #FDFBF7;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .log_detail .log_basic .log_basic_detail .id_box .id_in .id_chck button {
+  width: 30%;
+  height: 30px;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 2px;
+  background-color: #F3ECE3;
+  border: none;
+  border-radius: 5px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .id_box .id_in input {
+  width: 100%;
+  line-height: 30px;
+  border: none;
+  background-color: #FDFBF7;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .log_detail .log_basic .log_basic_detail .pw_box {
+  width: 100%;
+  margin: 10px auto;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .log_detail .log_basic .log_basic_detail .pw_box label {
+  width: 30%;
+  font-size: 18px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .pw_box .pw_chck {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .log_detail .log_basic .log_basic_detail .pw_box .pw_chck input {
+  width: calc(70% - 10px);
+  height: 30px;
+  font-size: 12px;
+  background-color: #FDFBF7;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .log_detail .log_basic .log_basic_detail .pw_box .pw_chck button {
+  width: 30%;
+  height: 30px;
+  line-height: 14px;
+  margin-top: 2px;
+  background-color: #F3ECE3;
+  border: none;
+  border-radius: 5px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .email_box {
+  width: 100%;
+  line-height: 30px;
+  margin: 10px auto;
+}
+.wrap .log_detail .log_basic .log_basic_detail .email_box label {
+  width: 30%;
+  height: 30px;
+  font-size: 18px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .email_box .email {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .log_detail .log_basic .log_basic_detail .email_box .email .email_do {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .log_detail .log_basic .log_basic_detail .email_box .email .email_do input {
+  width: 50%;
+  background-color: #FDFBF7;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .log_detail .log_basic .log_basic_detail .email_box .email select {
+  width: 25%;
+}
+.wrap .log_detail .log_basic .log_basic_detail .addr_box {
+  width: 100%;
+  line-height: 30px;
+  margin: 10px auto;
+}
+.wrap .log_detail .log_basic .log_basic_detail .addr_box label {
+  width: 30%;
+  height: 30px;
+  font-size: 18px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .addr_box .addr_box00 {
+  width: 100%;
+}
+.wrap .log_detail .log_basic .log_basic_detail .addr_box .addr_box00 .addr_box01 {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .log_detail .log_basic .log_basic_detail .addr_box .addr_box00 .addr_box01 input {
+  width: 80%;
+  line-height: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #FDFBF7;
+}
+.wrap .log_detail .log_basic .log_basic_detail .addr_box .addr_box00 .addr_box01 button {
+  width: calc(20% - 10px);
+  background-color: #F3ECE3;
+  border: none;
+  border-radius: 5px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .addr_box .addr_box00 .addr_box02 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .log_detail .log_basic .log_basic_detail .addr_box .addr_box00 .addr_box02 input {
+  width: calc(50% - 10px);
+  line-height: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #FDFBF7;
+}
+.wrap .log_detail .log_basic .log_basic_detail .tel_box {
+  width: 100%;
+  margin: 10px auto;
+}
+.wrap .log_detail .log_basic .log_basic_detail .tel_box label {
+  width: 30%;
+  height: 30px;
+  font-size: 18px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .tel_box .tele_box {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .log_detail .log_basic .log_basic_detail .tel_box .tele_box .tele_in {
+  width: 80%;
+}
+.wrap .log_detail .log_basic .log_basic_detail .tel_box .tele_box .tele_in select {
+  height: 30px;
+}
+.wrap .log_detail .log_basic .log_basic_detail .tel_box .tele_box .tele_in input {
+  width: 30%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #FDFBF7;
+}
+.wrap .log_detail .log_basic .log_basic_detail .tel_box .tele_box .tele_btn {
+  width: 20%;
+}
+.wrap .log_detail .log_basic .log_basic_detail .tel_box .tele_box .tele_btn button {
+  margin-top: 5px;
+  height: 30px;
+  line-height: 14px;
+  border: none;
+  background-color: #F3ECE3;
+  border-radius: 5px;
+}
+.wrap .log_detail .log_basic {
+  /*log_basic_detail*/
+}
+.wrap .log_detail {
+  /*log_basic*/
+}
+.wrap .log_detail .deli {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+.wrap .log_detail .deli .deli_box .deli_btn {
+  margin-bottom: 20px;
+  background-color: aquamarine;
+}
+.wrap .log_detail .deli .deli_box .deli_name_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  margin: 10px auto;
+}
+.wrap .log_detail .deli .deli_box .deli_name_box label {
+  width: 20%;
+  font-size: 18px;
+}
+.wrap .log_detail .deli .deli_box .deli_name_box input {
+  width: calc(80% - 10px);
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #FDFBF7;
+}
+.wrap .log_detail .deli .deli_box .deli_tel_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  margin: 10px auto;
+}
+.wrap .log_detail .deli .deli_box .deli_tel_box label {
+  width: 30%;
+  font-size: 18px;
+}
+.wrap .log_detail .deli .deli_box .deli_tel_box input {
+  width: calc(70% - 10px);
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #FDFBF7;
+}
+.wrap .log_detail .deli .deli_box .deli_addr_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  margin: 10px auto;
+}
+.wrap .log_detail .deli .deli_box .deli_addr_box label {
+  width: 20%;
+  font-size: 18px;
+}
+.wrap .log_detail .deli .deli_box .deli_addr_box input {
+  width: calc(80% - 10px);
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #FDFBF7;
+}
+.wrap .log_detail {
+  /*deli_box*/
+}
+.wrap .log_detail .next_btn {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin: 30px auto;
+  border: none;
+  border-radius: 10px;
+  background-color: #F3ECE3;
+  font-size: 18px;
+}
+.wrap {
+  /*log_detail*/
+}
+
+/*wrap*/
+.popup {
+  width: calc(100% - 20px);
+  height: 450px;
+  background-color: #F3ECE3;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup .next_txt .txt01 {
+  width: calc(100% - 10px);
+  margin: 20px auto;
+  text-align: center;
+}
+.popup .next_txt .txt01 > div {
+  width: 100px;
+  height: 100px;
+  margin-left: calc(50% - 50px);
+}
+.popup .next_txt .txt01 > div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.popup .next_txt .txt02 {
+  width: calc(100% - 10px);
+  margin: 20px auto;
+  text-align: center;
+}
+.popup .next_txt .txt02 > div {
+  width: 100px;
+  height: 100px;
+  margin-left: calc(50% - 50px);
+}
+.popup .next_txt .txt02 > div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.popup button {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 25px);
+  border: none;
+  background-color: #decbbc;
+}/*# sourceMappingURL=log_detail.css.map */

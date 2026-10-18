@@ -1,0 +1,342 @@
+/*---------------default_setting----------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*----------------------------------------------*/
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #FDFBF7;
+}
+
+@mixin btn {
+  border: none;
+  width: 45px;
+  height: 45px;
+  background-color: #F3ECE3;
+}
+
+@mixin img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@mixin image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*------------------------------------------------*/
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #F3ECE3;
+
+  .back {
+    @include btn;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.wrap {
+  width: calc(100% - 10px);
+  margin: 0 auto;
+
+  .find_pw {
+
+    .find_pw_title {
+      text-align: center;
+      padding-top: 30px;
+      margin: 30px auto;
+      font-size: 30px;
+    }
+
+    .find {
+
+      .find_tab {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        display: flex;
+
+        li {
+          width: 50%;
+          text-align: center;
+          line-height: 40px;
+          border-bottom: 1px solid #ccc;
+        }
+
+        .on_tab {
+          border-bottom: 1px solid black;
+        }
+      }
+
+      .find_sheet {
+        height: auto;
+
+        >div {
+          padding: 10px;
+          display: none;
+
+          .tel_name {
+            width: 100%;
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-between;
+
+            label {
+              width: 20%;
+              line-height: 30px;
+            }
+
+            .tel_find {
+              width: calc(80% - 10px);
+              border: none;
+              background-color: #FDFBF7;
+              border-bottom: 1px solid #ccc;
+            }
+          }
+
+          .tel_tel {
+            width: 100%;
+            margin: 10px auto;
+
+            label {
+              width: 20%;
+              line-height: 30px;
+            }
+
+            .tel_box {
+              margin-top: 10px;
+              display: flex;
+              justify-content: space-between;
+
+              .tel_in {
+                width: 80%;
+                height: 30px;
+                display: flex;
+                line-height: 30px;
+
+                .tel {
+                  margin-right: 2px;
+                  border: none;
+                  background-color: #FDFBF7;
+                  border-bottom: 1px solid #ccc;
+                }
+
+                input {
+                  margin: 0 2px;
+                  border: none;
+                  background-color: #FDFBF7;
+                  border-bottom: 1px solid #ccc;
+                }
+              }
+
+              .tel_btn {
+                padding: 0 2px;
+                line-height: 14px;
+                height: 30px;
+                font-size: 12px;
+                background-color: #F3ECE3;
+                border-radius: 5px;
+                border: none;
+              }
+            }
+          }
+
+          .tel_num {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            input {
+              width: 75%;
+              line-height: 30px;
+              border: none;
+              background-color: #FDFBF7;
+              border-bottom: 1px solid #ccc;
+            }
+
+            .btn_num {
+              width: calc(25% - 10px);
+              font-size: 12px;
+              line-height: 12px;
+              background-color: #F3ECE3;
+              border: none;
+              border-radius: 5px;
+            }
+          }
+
+          .btn_next {
+            display: block;
+            width: 50%;
+            line-height: 40px;
+            margin: 30px auto;
+            border: none;
+            background-color: #F3ECE3;
+            border-radius: 10px;
+          }
+
+          .email_name {
+            width: 100%;
+            display: flex;
+            margin: 10px auto;
+            justify-content: space-between;
+
+            label {
+              width: 20%;
+              line-height: 30px;
+            }
+
+            .email_find {
+              width: calc(80% - 10px);
+              border: none;
+              border-bottom: 1px solid #ccc;
+              background-color: #FDFBF7;
+            }
+          }
+
+          .email_email {
+            width: 100%;
+            margin: 10px auto;
+
+            label {
+              width: 20%;
+              border: none;
+              border-bottom: 1px solid #ccc;
+            }
+
+            .email_do {
+              width: 100%;
+              line-height: 30px;
+              display: flex;
+              justify-content: space-between;
+
+              input {
+                width: 30%;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                background-color: #FDFBF7;
+              }
+
+              select {
+                width: calc(30% - 5px);
+                border: none;
+                background-color: #FDFBF7;
+              }
+            }
+          }
+
+          .next_btn {
+            display: block;
+            width: 50%;
+            line-height: 40px;
+            margin: 30px auto;
+            background-color: #F3ECE3;
+            border-radius: 10px;
+            border: none;
+          }
+        }
+
+        /*div*/
+        .on_sheet {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/*wrap*/
+
+.popup {
+  display: none;
+  width: calc(100% - 20px);
+  padding: 10px 0;
+  background-color: #FDFBF7;
+  border: 1px solid #eee;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+
+  .popup_title {
+    padding: 10px;
+    width: 100%;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 0 auto;
+  }
+
+  .new {
+    width: calc(100% - 10px);
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+
+    label {
+      width: 35%;
+      line-height: 40px;
+    }
+
+    .new_pw {
+      width: calc(65% - 10px);
+      display: block;
+      margin: 0 auto;
+      line-height: 40px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background-color: #FDFBF7;
+    }
+  }
+
+  .new01 {
+    width: calc(100% - 10px);
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+
+    label {
+      width: 40%;
+      line-height: 40px;
+    }
+    .new_pw01 {
+      width: calc(65% - 10px);
+      display: block;
+      margin: 0 auto;
+      line-height: 40px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background-color: #FDFBF7;
+    }
+  }
+  .btn_chk {
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3ECE3;
+    border-radius: 10px;
+    padding: 2px 5px;
+    font-size: 18px;
+    border: none;
+  }
+}

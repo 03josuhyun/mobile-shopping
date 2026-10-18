@@ -1,0 +1,999 @@
+/*---------------default_setting----------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*----------------------------------------------*/
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #FDFBF7;
+}
+
+/*--------------------------------------------------*/
+.header {
+  background-color: #F3ECE3;
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+.header > .logo {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+}
+.header > .logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.header {
+  /*logo*/
+}
+.header > .header_in {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.header > .header_in .search_box {
+  width: 30px;
+  height: 30px;
+}
+.header > .header_in .search_box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.header > .header_in .login_box {
+  font-size: 26px;
+  color: #4A3E3D;
+  line-height: 30px;
+}
+.header > .header_in .cart_box {
+  width: 30px;
+  height: 30px;
+}
+.header > .header_in .cart_box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.header {
+  /*header_in*/
+}
+
+.visual_box {
+  width: 100%;
+}
+.visual_box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*header*/
+.wrap {
+  width: 100%;
+  height: auto;
+}
+.wrap > .best_box {
+  width: calc(100% - 8px);
+  margin: 40px auto;
+}
+.wrap > .best_box .best_title {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+.wrap > .best_box .best {
+  width: calc(100% - 8px);
+  height: 320px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+.wrap > .best_box .best .item_box {
+  width: 2000px;
+  height: 300px;
+  display: flex;
+}
+.wrap > .best_box .best .item_box .best_item {
+  width: calc(100% - 100px);
+  height: 300px;
+  margin-right: 10px;
+  position: relative;
+}
+.wrap > .best_box .best .item_box .best_item .item {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.wrap > .best_box .best .item_box .best_item .item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap > .best_box .best .item_box .best_item .item .best_btn {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.wrap > .best_box .best .item_box .best_item .item .best_btn > div {
+  width: 30px;
+  height: 30px;
+}
+.wrap > .best_box .best .item_box .best_item .item .best_btn > div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap > .best_box .best .item_box .best_item .best_no {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #DECBBC;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.wrap > .best_box .best .item_box .best_item .best_name {
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  line-height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.wrap > .best_box .best .item_box .best_item .best_name p {
+  padding: 0 10px;
+}
+.wrap {
+  /*best_box*/
+}
+.wrap > .event_box {
+  width: calc(100% - 8px);
+  margin: 40px auto;
+}
+.wrap > .event_box .event_title {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+.wrap > .event_box .event {
+  width: calc(100% - 8px);
+  height: 270px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+.wrap > .event_box .event .banner {
+  width: 2000px;
+  display: flex;
+}
+.wrap > .event_box .event .banner div {
+  width: 250px;
+  height: 250px;
+  padding: 0 10px;
+}
+.wrap > .event_box .event .banner div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap {
+  /*event_box*/
+}
+.wrap > .today_box {
+  width: calc(100% - 8px);
+  margin: 40px auto;
+}
+.wrap > .today_box .today_title {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+.wrap > .today_box .today {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.wrap > .today_box .today .today_tab {
+  width: 100%;
+  height: 50px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.wrap > .today_box .today .today_tab ul {
+  width: 450px;
+  height: 40px;
+  display: flex;
+  padding: 0 10px;
+}
+.wrap > .today_box .today .today_tab ul li {
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 20px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 15px;
+}
+.wrap > .today_box .today .today_tab ul .tab_on01 {
+  background-color: #DECBBC;
+}
+.wrap > .today_box .today {
+  /*today_tab*/
+}
+.wrap > .today_box .today .today_sheet {
+  width: 100%;
+}
+.wrap > .today_box .today .today_sheet > div {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding-left: 5px;
+}
+.wrap > .today_box .today .today_sheet > div .item01 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.wrap > .today_box .today .today_sheet > div .item02 {
+  flex-wrap: wrap;
+  gap: 10px;
+  display: none;
+}
+.wrap > .today_box .today .today_sheet > div .today_item {
+  width: calc(50% - 5px);
+}
+.wrap > .today_box .today .today_sheet > div .today_item .today_img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.wrap > .today_box .today .today_sheet > div .today_item .today_img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.wrap > .today_box .today .today_sheet > div .today_item .today_img .today_btn {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.wrap > .today_box .today .today_sheet > div .today_item .today_img .today_btn > div {
+  width: 30px;
+  height: 30px;
+}
+.wrap > .today_box .today .today_sheet > div .today_item .today_img .today_btn > div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap > .today_box .today .today_sheet > div .today_item .today_detail {
+  padding: 10px;
+}
+.wrap > .today_box .today .today_sheet > div .today_item .today_detail .today_cash .today_top {
+  display: flex;
+  font-size: 14px;
+}
+.wrap > .today_box .today .today_sheet > div .today_item .today_detail .today_cash .today_top p {
+  color: red;
+  margin-right: 10px;
+}
+.wrap > .today_box .today .today_sheet > div .today_item .today_detail .today_cash .today_top del {
+  color: #ccc;
+}
+.wrap > .today_box .today .today_sheet > div .today_item_add {
+  display: block;
+  width: 80px;
+  height: 30px;
+  border: none;
+  margin: 20px auto;
+  background-color: #FDFBF7;
+}
+.wrap > .today_box .today .today_sheet > .sheet_on01 {
+  display: block;
+}
+.wrap {
+  /*today_box*/
+}
+.wrap > .mbti_box {
+  width: calc(100% - 8px);
+  margin: 40px auto;
+}
+.wrap > .mbti_box .mbti_title {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+.wrap > .mbti_box .mbti_tab {
+  width: calc(100% - 8px);
+  height: 50px;
+  overflow-x: scroll;
+  margin: 0 auto;
+}
+.wrap > .mbti_box .mbti_tab ul {
+  width: 300px;
+  margin-left: 10px;
+  display: flex;
+}
+.wrap > .mbti_box .mbti_tab ul li {
+  display: inline-block;
+  padding: 3px 30px;
+  border-radius: 20px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+.wrap > .mbti_box .mbti_tab ul .tab_on02 {
+  background-color: #DECBBC;
+}
+.wrap > .mbti_box {
+  /*mbit_tab*/
+}
+.wrap > .mbti_box .mbti_sheet {
+  width: 100%;
+  height: auto;
+}
+.wrap > .mbti_box .mbti_sheet > div {
+  width: calc(100% - 8px);
+  margin-top: 10px;
+  display: none;
+}
+.wrap > .mbti_box .mbti_sheet > div .mbti_item {
+  width: calc(100% - 20px);
+  height: 150px;
+  padding: 15px 15px;
+  display: flex;
+}
+.wrap > .mbti_box .mbti_sheet > div .mbti_item .mbti_img {
+  width: 140px;
+  height: auto;
+  margin-right: 10px;
+  background-color: aquamarine;
+}
+.wrap > .mbti_box .mbti_sheet > div .mbti_item .mbti_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap > .mbti_box .mbti_sheet > div .mbti_item .mbti_detail {
+  width: 190px;
+  height: 150px;
+}
+.wrap > .mbti_box .mbti_sheet > div .mbti_item .mbti_detail .mbti_tag {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.wrap > .mbti_box .mbti_sheet > div .mbti_item .mbti_detail .mbti_tag p {
+  border-radius: 20px;
+  background-color: aliceblue;
+  padding: 3px;
+}
+.wrap > .mbti_box .mbti_sheet > div .mbti_item .mbti_detail .mbti_name {
+  margin: 10px;
+}
+.wrap > .mbti_box .mbti_sheet > div .mbti_item .mbti_detail .mbti_cash {
+  margin: 5px 10px;
+  position: relative;
+}
+.wrap > .mbti_box .mbti_sheet > div .mbti_item .mbti_detail .mbti_cash .mbti_btn {
+  display: flex;
+  position: absolute;
+  bottom: -5px;
+  right: 10px;
+}
+.wrap > .mbti_box .mbti_sheet > div .mbti_item .mbti_detail .mbti_cash .mbti_btn > div {
+  width: 30px;
+  height: 30px;
+}
+.wrap > .mbti_box .mbti_sheet > div .mbti_item .mbti_detail .mbti_cash .mbti_btn > div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap > .mbti_box .mbti_sheet > div.sheet_on02 {
+  display: block;
+}
+.wrap {
+  /*mbti_box*/
+}
+.wrap > .season_box .season_title {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  color: #FDFBF7;
+}
+.wrap > .season_box .season_title p:nth-child(1) {
+  padding-top: 20px;
+  font-family: "Playfair Display", serif;
+}
+.wrap > .season_box .season_title p:nth-child(2) {
+  font-size: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.wrap > .season_box .season_tab {
+  width: 100%;
+  height: 200px;
+  background-image: url("./img/season_bg04.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.wrap > .season_box .season_tab ul {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  display: flex;
+}
+.wrap > .season_box .season_tab ul li {
+  width: 70px;
+  padding: 2px 5px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin: 20px auto;
+  border-radius: 20px;
+  background-color: #FDFBF7;
+}
+.wrap > .season_box .season_tab ul .tab_on03 {
+  background-color: #DECBBC;
+}
+.wrap > .season_box .season_sheet {
+  width: 100%;
+  padding: 10px 0;
+}
+.wrap > .season_box .season_sheet > div {
+  display: none;
+  justify-content: center;
+  width: calc(100% - 8px);
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.wrap > .season_box .season_sheet > div .season_item {
+  width: calc(50% - 10px);
+  gap: 10px 20px;
+  background-color: #FDFBF7;
+}
+.wrap > .season_box .season_sheet > div .season_item .season_img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.wrap > .season_box .season_sheet > div .season_item .season_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap > .season_box .season_sheet > div .season_item .season_img .season_btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+}
+.wrap > .season_box .season_sheet > div .season_item .season_img .season_btn > div {
+  width: 30px;
+  height: 30px;
+}
+.wrap > .season_box .season_sheet > div .season_item .season_img .season_btn > div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap > .season_box .season_sheet > div .season_detail .season_left {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+}
+.wrap > .season_box .season_sheet > div .season_detail .season_right {
+  padding: 2px 5px;
+}
+.wrap > .season_box .season_sheet > div .season_detail .season_right .right_top {
+  display: flex;
+}
+.wrap > .season_box .season_sheet > div .season_detail .season_right .right_top p {
+  margin-right: 5px;
+  color: red;
+}
+.wrap > .season_box .season_sheet > div .season_detail .season_right .right_top del {
+  color: #ccc;
+}
+.wrap > .season_box .season_sheet > div .season_detail .season_right .right_bot {
+  padding: 2px;
+}
+.wrap > .season_box .season_sheet > div.sheet_on03 {
+  display: flex;
+}
+.wrap {
+  /*season_box*/
+}
+.wrap > .celeb_box {
+  width: calc(100% - 8px);
+  margin: 40px auto;
+}
+.wrap > .celeb_box .celeb_title {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+.wrap > .celeb_box .celeb_img {
+  width: 100%;
+  height: auto;
+}
+.wrap > .celeb_box .celeb_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap > .celeb_box .celeb_item {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap > .celeb_box .celeb_item > div {
+  width: calc(50% - 5px);
+}
+.wrap > .celeb_box .celeb_item > div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap > .celeb_box .celeb_item .popup01 {
+  position: relative;
+}
+.wrap {
+  /*celeb_box*/
+}
+.wrap .popup_box {
+  display: none;
+  width: calc(100% - 20px);
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  background-color: #F3ECE3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.wrap .popup_box .popup_x {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.wrap .popup_box .popup_x img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.wrap .popup_box .popup_img {
+  width: 70%;
+  margin: 0 auto;
+}
+.wrap .popup_box .popup_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap .popup_box .popup_detail .popup_left .popup_title {
+  display: block;
+  padding: 10px 5px;
+}
+.wrap .popup_box .popup_detail .popup_left .popup_txt {
+  padding: 0 10px;
+}
+.wrap .popup_box .popup_detail .popup_right {
+  display: flex;
+  position: absolute;
+  top: 270px;
+  left: calc(50% - 45px);
+}
+.wrap .popup_box .popup_detail .popup_right > div {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+.wrap .popup_box .popup_detail .popup_right > div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap {
+  /*celeb_popup*/
+}
+.wrap > .sin_box {
+  width: calc(100% - 8px);
+  margin: 40px auto;
+}
+.wrap > .sin_box .sin_title {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+.wrap > .sin_box .img_box {
+  width: 100%;
+  overflow-x: auto;
+}
+.wrap > .sin_box .img_box .sin {
+  width: 1000px;
+  height: 190px;
+  display: flex;
+}
+.wrap > .sin_box .img_box .sin .sin_img {
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+}
+.wrap > .sin_box .img_box .sin .sin_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap {
+  /*sin_box*/
+}
+.wrap > .season_event_box {
+  width: 100%;
+  background-image: url(./img/summer.jpg);
+  background-size: cover;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.wrap > .season_event_box .season_event_title {
+  font-size: 30px;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  padding-top: 20px;
+}
+.wrap > .season_event_box .event_tab ul {
+  display: flex;
+}
+.wrap > .season_event_box .event_tab ul li {
+  border-radius: 20px;
+  width: 70px;
+  padding: 2px 5px;
+  background-color: aliceblue;
+  text-align: center;
+  line-height: 30px;
+  margin: 20px auto;
+}
+.wrap > .season_event_box .event_tab ul .tab_on04 {
+  background-color: #F3ECE3;
+}
+.wrap > .season_event_box .event_sheet {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+.wrap > .season_event_box .event_sheet > div {
+  width: 100%;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.wrap > .season_event_box .event_sheet > div .event_item {
+  width: calc(50% - 10px);
+  overflow: hidden;
+  background-color: #FDFBF7;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_img .event_btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_img .event_btn > div {
+  width: 30px;
+  height: 30px;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_img .event_btn > div img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_detail {
+  width: 100%;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_detail .event_left {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_detail .event_right {
+  padding: 2px 5px;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_detail .event_right .event_top {
+  display: flex;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_detail .event_right .event_top p {
+  color: red;
+  margin-right: 10px;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_detail .event_right .event_top del {
+  color: #ccc;
+}
+.wrap > .season_event_box .event_sheet > div .event_item .event_detail .event_right .event_bot {
+  padding: 2px 0;
+}
+.wrap > .season_event_box .event_sheet .sheet_on04 {
+  display: flex;
+}
+
+/*wrap*/
+.footer {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: #F3ECE3;
+}
+.footer #footer_btn {
+  display: none;
+}
+.footer #footer_btn ~ .footer_top {
+  display: none;
+}
+.footer #footer_btn:checked ~ .footer_top {
+  display: block;
+}
+.footer .footer_btn {
+  margin: 0 10px;
+}
+.footer .footer_top {
+  padding: 10px 15px;
+}
+.footer .footer_top > div p:nth-child(2) {
+  font-size: 14px;
+  color: #444;
+}
+.footer .footer_top .footer_title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.footer .footer_top .top_txt01 {
+  display: flex;
+}
+.footer .footer_top .top_txt02 {
+  display: flex;
+}
+.footer .footer_top .top_txt03 {
+  display: flex;
+}
+.footer .footer_top .top_txt05 {
+  display: flex;
+}
+.footer .footer_top .top_txt06 {
+  display: flex;
+}
+.footer .footer_top .top_txt07 {
+  display: flex;
+}
+.footer .footer_top .top_txt08 {
+  display: flex;
+}
+.footer .footer_top .top_txt09 {
+  font-size: 12px;
+  color: #666;
+}
+.footer {
+  /*footer_top*/
+}
+.footer .footer_bot {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer_bot .bot_txt01 {
+  display: flex;
+}
+.footer .footer_bot .bot_txt01 p:nth-child(1) {
+  font-size: 14px;
+  font-weight: bold;
+}
+.footer .footer_bot .bot_txt01 p:nth-child(2) {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.footer .footer_bot .bot_txt02 {
+  margin-top: 10px;
+}
+.footer .footer_bot .bot_txt02 > p:nth-child(1) {
+  font-size: 14px;
+  font-weight: bold;
+}
+.footer .footer_bot .bot_txt02 > div {
+  padding: 2px 5px;
+}
+.footer .footer_bot .bot_txt02 > div p {
+  font-size: 12px;
+}
+.footer .footer_bot .bot_txt02 > p:nth-child(3) {
+  font-size: 12px;
+  padding: 2px 5px;
+}
+.footer {
+  /*footer_bot*/
+}
+.footer .footer_sns .sns_box {
+  display: flex;
+}
+.footer .footer_sns .sns_box .sns_img {
+  width: 30px;
+  height: 30px;
+}
+.footer .footer_sns .sns_box .sns_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.footer .footer_sns .sns_box p {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+/*footer*/
+.bar {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+.bar > a {
+  width: 25%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #4A3E3D;
+}
+.bar > a > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.bar > a > div .btn_img {
+  width: 30px;
+  height: 30px;
+}
+.bar > a > div .btn_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*footer*/
+.cart_popup {
+  display: none;
+  width: calc(100% - 20px);
+  height: 250px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+}
+.cart_popup .cart_close {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.cart_popup .cart_close img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.cart_popup .cart_img {
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
+  margin-left: calc(50% - 40px);
+}
+.cart_popup .cart_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.cart_popup .cart_txt {
+  margin-left: calc(50% - 80px);
+  margin-top: 10px;
+}
+.cart_popup .btn_cart {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.cart_popup .btn_cart span {
+  width: 120px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+}
+.cart_popup .btn_cart .cart_ing {
+  margin-right: 10px;
+  border: 1px solid #DECBBC;
+}
+.cart_popup .btn_cart .cart_next {
+  background-color: #DECBBC;
+}
+.cart_popup .btn_cart .cart_next a {
+  line-height: 40px;
+  color: white;
+}
+
+/*cart_popup*/
+.heart_popup {
+  display: none;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heart_popup img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}/*# sourceMappingURL=index.css.map */

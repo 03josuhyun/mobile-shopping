@@ -1,0 +1,570 @@
+/*---------------default_setting----------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*----------------------------------------------*/
+body {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #FDFBF7;
+}
+
+@mixin btn {
+  border: none;
+  width: 45px;
+  height: 45px;
+  background-color: #F3ECE3;
+}
+
+@mixin img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@mixin image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*------------------------------------------------*/
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #F3ECE3;
+
+  .back {
+    @include btn;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.wrap {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+
+
+  .log_detail {
+    width: 100%;
+    margin: 0 auto;
+
+    .log_detail_title {
+      text-align: center;
+      padding-top: 60px;
+      margin: 30px auto;
+      font-size: 30px;
+    }
+
+    .breadcrumb {
+      width: 200px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+      text-align: center;
+      display: flex;
+      color: #666;
+      font-size: 16px;
+
+      p:nth-child(2) {
+        color: black;
+        font-weight: bold;
+      }
+    }
+
+    /*breacrumb*/
+
+    .log_basic {
+      width: calc(100% - 20px);
+      margin: 0 auto;
+
+      .log_basic_title {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        margin: 10px auto;
+
+        p:nth-child(2) {
+          font-size: 12px;
+          margin-top: 5px;
+          color: #aaa;
+        }
+      }
+
+      .log_basic_detail {
+        width: calc(100% - 10px);
+        margin: 20px auto;
+
+        .name_box {
+          width: 100%;
+          line-height: 30px;
+          display: flex;
+          justify-content: space-between;
+          margin: 10px auto;
+
+          label {
+            width: 30%;
+            font-size: 18px;
+          }
+
+          .user_name {
+            width: calc(70% - 10px);
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background-color: #FDFBF7;
+          }
+        }
+
+        .gender_box {
+          width: 100%;
+          line-height: 30px;
+          display: flex;
+          justify-content: space-between;
+          margin: 10px auto;
+
+          label {
+            width: 30%;
+            line-height: 30px;
+            font-size: 18px;
+          }
+
+          .gender_btn {
+            width: calc(70% - 10px);
+            line-height: 30px;
+            font-size: 18px;
+
+            input {
+              margin: 0 10px;
+            }
+          }
+        }
+
+        .birth_box {
+          width: 100%;
+          line-height: 60px;
+          display: flex;
+          justify-content: space-between;
+          margin: 10px auto;
+
+          label {
+            width: 30%;
+            font-size: 18px;
+          }
+
+          .birth {
+            width: calc(70% - 10px);
+            line-height: 30px;
+
+            input {
+              margin: 0 10px;
+            }
+          }
+        }
+
+        .nationality_box {
+          width: 100%;
+          line-height: 30px;
+          display: flex;
+          justify-content: space-between;
+          margin: 10px auto;
+
+          label {
+            width: 30%;
+            font-size: 18px;
+          }
+
+          .nation_box {
+            width: calc(70% - 10px);
+            line-height: 30px;
+          }
+        }
+
+        .id_box {
+          width: 100%;
+          line-height: 60px;
+          margin: 10px auto;
+          display: flex;
+          justify-content: space-between;
+
+          label {
+            width: 30%;
+            font-size: 18px;
+          }
+
+          .id_in {
+            width: 70%;
+            line-height: 60px;
+
+            .id_chck {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+
+              input {
+                width: calc(70% - 10px);
+                height: 30px;
+                background-color: #FDFBF7;
+                border: none;
+                border-bottom: 1px solid #ccc;
+              }
+
+              button {
+                width: 30%;
+                height: 30px;
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 2px;
+                background-color: #F3ECE3;
+                border: none;
+                border-radius: 5px;
+              }
+            }
+
+            input {
+              width: 100%;
+              line-height: 30px;
+              border: none;
+              background-color: #FDFBF7;
+              border-bottom: 1px solid #ccc;
+            }
+          }
+        }
+
+        .pw_box {
+          width: 100%;
+          margin: 10px auto;
+          line-height: 30px;
+          display: flex;
+          justify-content: space-between;
+
+          label {
+            width: 30%;
+            font-size: 18px;
+          }
+
+          .pw_chck {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+
+            input {
+              width: calc(70% - 10px);
+              height: 30px;
+              font-size: 12px;
+              background-color: #FDFBF7;
+              border: none;
+              border-bottom: 1px solid #ccc;
+            }
+
+            button {
+              width: 30%;
+              height: 30px;
+              line-height: 14px;
+              margin-top: 2px;
+              background-color: #F3ECE3;
+              border: none;
+              border-radius: 5px;
+            }
+          }
+        }
+
+        .email_box {
+          width: 100%;
+          line-height: 30px;
+          margin: 10px auto;
+
+          label {
+            width: 30%;
+            height: 30px;
+            font-size: 18px;
+          }
+
+          .email {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .email_do {
+              width: 70%;
+              display: flex;
+              justify-content: space-between;
+
+              input {
+                width: 50%;
+                background-color: #FDFBF7;
+                border: none;
+                border-bottom: 1px solid #ccc;
+              }
+            }
+
+            select {
+              width: 25%;
+            }
+          }
+        }
+
+        .addr_box {
+          width: 100%;
+          line-height: 30px;
+          margin: 10px auto;
+
+          label {
+            width: 30%;
+            height: 30px;
+            font-size: 18px;
+          }
+
+          .addr_box00 {
+            width: 100%;
+
+            .addr_box01 {
+              margin-bottom: 5px;
+              display: flex;
+              justify-content: space-between;
+
+              input {
+                width: 80%;
+                line-height: 30px;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                background-color: #FDFBF7;
+              }
+
+              button {
+                width: calc(20% - 10px);
+                background-color: #F3ECE3;
+                border: none;
+                border-radius: 5px;
+              }
+            }
+
+            .addr_box02 {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+
+              input {
+                width: calc(50% - 10px);
+                line-height: 30px;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                background-color: #FDFBF7;
+              }
+            }
+          }
+        }
+
+        .tel_box {
+          width: 100%;
+          margin: 10px auto;
+
+          label {
+            width: 30%;
+            height: 30px;
+            font-size: 18px;
+          }
+
+          .tele_box {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+
+            .tele_in {
+              width: 80%;
+
+              select {
+                height: 30px;
+              }
+
+              input {
+                width: 30%;
+                height: 30px;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                background-color: #FDFBF7;
+              }
+            }
+
+            .tele_btn {
+              width: 20%;
+
+              button {
+                margin-top: 5px;
+                height: 30px;
+                line-height: 14px;
+                border: none;
+                background-color: #F3ECE3;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      /*log_basic_detail*/
+    }
+
+    /*log_basic*/
+
+    .deli {
+      width: calc(100% - 20px);
+      margin: 0 auto;
+
+      .deli_box {
+
+        .deli_btn {
+          margin-bottom: 20px;
+          background-color: aquamarine;
+        }
+
+        .deli_name_box {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          height: 30px;
+          margin: 10px auto;
+
+          label {
+            width: 20%;
+            font-size: 18px;
+          }
+
+          input {
+            width: calc(80% - 10px);
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background-color: #FDFBF7;
+          }
+        }
+
+        .deli_tel_box {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          height: 30px;
+          margin: 10px auto;
+
+          label {
+            width: 30%;
+            font-size: 18px;
+          }
+
+          input {
+            width: calc(70% - 10px);
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background-color: #FDFBF7;
+          }
+        }
+
+        .deli_addr_box {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          height: 30px;
+          margin: 10px auto;
+
+          label {
+            width: 20%;
+            font-size: 18px;
+          }
+
+          input {
+            width: calc(80% - 10px);
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background-color: #FDFBF7;
+          }
+        }
+      }
+    }
+
+    /*deli_box*/
+
+    .next_btn {
+      display: block;
+      width: 200px;
+      height: 40px;
+      margin: 30px auto;
+      border: none;
+      border-radius: 10px;
+      background-color: #F3ECE3;
+      font-size: 18px;
+    }
+  }
+
+  /*log_detail*/
+}
+
+/*wrap*/
+.popup {
+  width: calc(100% - 20px);
+  height: 450px;
+  background-color: #F3ECE3;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .next_txt {
+
+    .txt01 {
+      width: calc(100% - 10px);
+      margin: 20px auto;
+      text-align: center;
+
+      >div {
+        width: 100px;
+        height: 100px;
+        margin-left: calc(50% - 50px);
+
+        img {
+          @include img;
+        }
+      }
+
+    }
+
+    .txt02 {
+      width: calc(100% - 10px);
+      margin: 20px auto;
+      text-align: center;
+
+      >div {
+        width: 100px;
+        height: 100px;
+        margin-left: calc(50% - 50px);
+
+        img {
+          @include img;
+        }
+      }
+    }
+  }
+
+  button {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 25px);
+    border: none;
+    background-color: #decbbc;
+  }
+}
